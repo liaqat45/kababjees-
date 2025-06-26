@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kababjees Fried Chicken</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: #b30000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 10px;
+      color: #b30000;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #b30000;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .hero img {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #b30000;
+      margin-bottom: 30px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .menu-item h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .price {
+      color: #b30000;
+      font-weight: bold;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background-color: #b30000;
+      color: white;
+      padding: 10px;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #222;
+      color: white;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="Kababjees Logo" style="height: 60px; vertical-align: middle;" />
+  <h1 style="display: inline-block; margin-left: 10px;">Kababjees Fried Chicken</h1>
+</header>
+
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#menu">Menu</a>
+  <a href="#korean">Korean Range</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="hero">
+  <img src="Adobe Express - file.jpg" alt="Kababjees Korean Banner" />
+</section>
+
+<section id="korean" class="section">
+  <h2>The Original Korean Range</h2>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <img src="/download (1).jpg" alt="Chicky Bites">
+      <h3>Korean Chicky Bites</h3>
+      <p class="price">Rs. 550</p>
+    </div>
+    <div class="menu-item">
+      <img src="/download (3).jpg" alt="Burger">
+      <h3>Korean Burger</h3>
+      <p class="price">Rs. 650</p>
+    </div>
+    <div class="menu-item">
+      <img src="/1713423114-plain.jpg" alt="Wings">
+      <h3>Hot Wings</h3>
+      <p class="price">Rs. 699</p>
+    </div>
+    <div class="menu-item">
+      <img src="/download (4).jpg" alt="Fries">
+      <h3>Loaded Fries</h3>
+      <p class="price">Rs. 650</p>
+    </div>
+    <div class="menu-item">
+      <img src="/download (5).jpg" alt="Rice">
+      <h3>Korean Rice</h3>
+      <p class="price">Rs. 490</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="section">
+  <h2>Popular Menu</h2>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <img src="/download (6).jpg" alt="Zinger">
+      <h3>Zinger Burger</h3>
+      <p class="price">Rs. 350</p>
+    </div>
+    <div class="menu-item">
+      <img src="/download (7).jpg" alt="Wings">
+      <h3>Chicken Wings</h3>
+      <p class="price">Rs. 400</p>
+    </div>
+    <div class="menu-item">
+      <img src="/download (8).jpg" alt="Broast">
+      <h3>Broast</h3>
+      <p class="price">Rs. 490</p>
+    </div>
+    <div class="menu-item">
+      <img src="/download (9).jpg" alt="Krispy Chicken">
+      <h3>Krispy Fried Chicken</h3>
+      <p class="price">Rs. 500</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About Kababjees</h2>
+  <p style="text-align: center;">Kababjees Fried Chicken is Pakistan’s favorite fast food chain, offering flavorful crispy chicken, burgers, wings and more with unmatched taste and quality since 2010.</p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Kababjees Fried Chicken. All rights reserved.
+</footer>
+
+</body>
+</html>
